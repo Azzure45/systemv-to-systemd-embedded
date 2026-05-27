@@ -10,7 +10,7 @@ The default settings is for this image to be build with Systemd. Our first step 
 Assuming you have already built an image, open the file build/conf/local.conf
 
 Add this code to the bottom of that file:
-
+```
 DISTRO_FEATURES:append = " systemd sysvinit"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 VIRTUAL-RUNTIME_initscripts = "initscripts"
@@ -25,5 +25,4 @@ IMAGE_INSTALL:append = " \
     util-linux-agetty \
     procps \
 "
-
-`code`
+``` 
