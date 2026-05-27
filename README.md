@@ -7,7 +7,7 @@ It covers downloading repo (git tool), downloading the nxp reposioiry and buildi
 The default settings is for this image to be build with Systemd. Our first step is change this to system V and use systemd on top.
 
 # After following the guide
-Assuming you have already built an image, open the file build/conf/local.conf
+Assuming you have already built an image, open the file `build/conf/local.conf`
 
 Add this code to the bottom of that file:
 ```
