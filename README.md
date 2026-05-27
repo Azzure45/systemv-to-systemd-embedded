@@ -1,3 +1,5 @@
+# Migration guide to systemd from system V
+
 To start follow this guide:
 https://ericlinsechs.github.io/2024-02-26-Build-Linux-Distribution-for-NXP-iMX-8-with-Yocto-Project/
 
@@ -8,7 +10,7 @@ Now the default settings are to build with Systemd. First to show a migration we
 Assuming you have already built an image, open the file build/conf/local.conf
 
 Add this code to the bottom of that file:
-´´´
+´
 DISTRO_FEATURES:append = " systemd sysvinit"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 VIRTUAL-RUNTIME_initscripts = "initscripts"
@@ -23,4 +25,4 @@ IMAGE_INSTALL:append = " \
     util-linux-agetty \
     procps \
 "
-´´´
+´
