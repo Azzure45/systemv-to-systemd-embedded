@@ -26,3 +26,5 @@ IMAGE_INSTALL:append = " \
     procps \
 "
 ``` 
+
+Now all that is left is to flash your hardware
